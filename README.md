@@ -90,15 +90,16 @@ $ python ./Train.py
     ```
     TransE   321(MR)(300 epochs)
     TransH   390(MR)(130 epochs)
-    KG2E
-    ```
-
-    **说明**：模型训练均未训练完，且未进行人工调整参数
-
-  + 修复部分代码`bug`
-
-  + `TransA`和`TransD`模型说明
-
+    KG2E_KL  276(MR)(500 epochs)
+    KG2E_EL  267(MR)(500 epochs)
+  ```
+  
+  **说明**：模型训练均未训练完，且未进行人工调整参数
+  
++ 修复部分代码`bug`
+  
++ `TransA`和`TransD`模型说明
+  
     + `TransD`模型在验证阶段的效率过低，`1.01个(样例)/秒`的验证速率，时间主要消耗在矩阵`Mrt`和矩阵`EntityEmbedding`的相乘上。
     + `TransA`模型无法理解论文中对于`Wr`的求取的说明，无法求出`Wr`。
 
